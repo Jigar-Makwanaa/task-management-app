@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": "3b7c",
+      "name": "jigar",
+      "email": "jigar@gmail.com",
+      "password": "12345",
+      "phone": "212122",
+      "city": "surat"
+    },
+    {
+      "id": "9754",
+      "name": "jenish",
+      "email": "jenish@gmail.com",
+      "password": "12345",
+      "phone": "21213",
+      "city": "surat"
+    },
+    {
+      "id": "9869",
+      "name": "jay",
+      "email": "jay@gmail.com",
+      "password": "12",
+      "phone": "1212121",
+      "city": "surat"
+    }
+  ]
+}
