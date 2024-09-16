@@ -23,6 +23,14 @@
       "password": "12",
       "phone": "1212121",
       "city": "surat"
+    },
+    {
+      "id": "b978",
+      "name": "dev",
+      "email": "dev@gmail.com",
+      "password": "121212",
+      "phone": "456789",
+      "city": "surat"
     }
   ]
 }
