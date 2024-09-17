@@ -43,9 +43,9 @@ const Edit = () => {
             if (val.id == id) {
                 return {
                     ...val,
-                    name : name,
-                    dis : dis,
-                    cat : cat
+                    name: name,
+                    dis: dis,
+                    cat: cat
                 }
             }
             return val
@@ -53,7 +53,7 @@ const Edit = () => {
 
         setRecord(updateEdit)
 
-        localStorage.setItem('user',JSON.stringify(updateEdit))
+        localStorage.setItem('user', JSON.stringify(updateEdit))
 
         navigate('/viewData')
 
@@ -65,7 +65,7 @@ const Edit = () => {
 
     return (
         <>
-        <Header/>
+            <Header />
 
 
             <div className="d-flex justify-content-center pt-5">
@@ -80,10 +80,12 @@ const Edit = () => {
                             <input type="password" onChange={(e) => setCat(e.target.value)} value={cat} placeholder='Task Catagory' />
                             <button className="btn btn-primary mt-4" type='submit'>Edited Task</button>
                         </form>
+
                     </div>
                     <button type="button" class="btn btn-warning">
                         <Link className='text-decoration-none text-black' to={'/view'}>View Task <i className="fa-solid fa-right-from-bracket"></i></Link>
                     </button>
+
                 </div>
             </div>
 
