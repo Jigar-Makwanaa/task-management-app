@@ -35,45 +35,18 @@ const View = () => {
             <div className="container">
                 <h1> View Task </h1>
 
-                {/* <table className="rwd-table">
-                    <thead>
-                        <tr>
-                            <td>Id</td>
-                            <td>Name</td>
-                            <td>Email</td>
-                            <td>Password</td>
-                            <td>Action</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {
-                            record.map((val) => {
-                                return (
-                                    <tr key={val.id}>
-                                        <td>{val.id}</td>
-                                        <td>{val.name}</td>
-                                        <td>{val.email}</td>
-                                        <td>{val.password}</td>
-                                        <td>
-                                            
-                                        </td>
-                                    </tr>
-                                )
-                            })
-                        }
-                    </tbody>
-                </table> */}
-                <div className="card" style={{ width: '18rem' }}>
+                <div className="card m-2 border-0 d-flex">
                     {
                         record.map((val) => {
                             return (
-                                <div className="card-body">
+                                <div className="card-body border border-warning m-2 " style={{ width: '18rem' }}>
                                     <h5 className="card-title">{val.name}</h5>
                                     <p className="card-text">{val.dis}</p>
-                                    <button type="button" class="btn btn-primary">mark task as completed </button>
-                                    <button className='deleteData' onClick={() => deleteData(val.id)}>Delete</button>
-                                    <button className='editData'>
-                                        <Link to={`/edit/${val.id}`}>Edit</Link>
+                                    <p className="card-text">{val.cat}</p>
+                                    <button type="button" class="btn btn-primary my-2">mark task as completed </button>
+                                    <button className='deleteData bg-danger text-light border-0 mx-2' onClick={() => deleteData(val.id)}>Delete</button>
+                                    <button className='editData bg-success  border-0'>
+                                        <Link className='text-light' to={`/edit/${val.id}`}>Edit</Link>
                                     </button>
                                 </div>
                             )

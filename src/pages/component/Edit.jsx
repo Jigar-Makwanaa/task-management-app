@@ -67,27 +67,24 @@ const Edit = () => {
         <>
         <Header/>
 
-            <div className="container">
-                <h1>Edit Task </h1>
-                <form onSubmit={(e) => handleSubmit(e)}>
-                    <div className="form-control">
-                        {/* <input type="text" required /> */}
-                        <input type="text" onChange={(e) => setName(e.target.value)} value={name} placeholder='Name' />
-                    </div>
-                    <div className="form-control">
-                        {/* <input type="text" required /> */}
-                        <input type="text" onChange={(e) => setDis(e.target.value)} value={dis} placeholder='Email' />
-                    </div>
-                    <div className="form-control">
-                        {/* <input type="password" required /> */}
-                        <input type="text" onChange={(e) => setDis(e.target.value)} value={dis} placeholder='discription' />
-                    </div>
-                    <button className="btn" type='submit'>Edit</button>
-                </form>
-            </div>
 
-            <div className="viewPage">
-                <Link to={'/view'}>View Page <i className="fa-solid fa-right-from-bracket"></i></Link>
+            <div className="d-flex justify-content-center pt-5">
+                <div class="card text-center col-6">
+                    <div class="card-header">
+                        EDIT TASK
+                    </div>
+                    <div class="card-body">
+                        <form onSubmit={(e) => handleSubmit(e)}>
+                            <input type="text" onChange={(e) => setName(e.target.value)} value={name} placeholder='task name' />
+                            <input type="text" className='ms-2 me-2' onChange={(e) => setDis(e.target.value)} value={dis} placeholder='discription' />
+                            <input type="password" onChange={(e) => setCat(e.target.value)} value={cat} placeholder='Task Catagory' />
+                            <button className="btn btn-primary mt-4" type='submit'>Edited Task</button>
+                        </form>
+                    </div>
+                    <button type="button" class="btn btn-warning">
+                        <Link className='text-decoration-none text-black' to={'/view'}>View Task <i className="fa-solid fa-right-from-bracket"></i></Link>
+                    </button>
+                </div>
             </div>
 
         </>
