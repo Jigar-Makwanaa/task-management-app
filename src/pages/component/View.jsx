@@ -43,7 +43,6 @@ const View = () => {
                                     <h5 className="card-title">{val.name}</h5>
                                     <p className="card-text">{val.dis}</p>
                                     <p className="card-text">{val.cat}</p>
-                                    <button type="button" class="btn btn-primary my-2">mark task as completed </button>
                                     <button className='deleteData bg-danger text-light border-0 mx-2' onClick={() => deleteData(val.id)}>Delete</button>
                                     <button className='editData bg-success  border-0'>
                                         <Link className='text-light' to={`/edit/${val.id}`}>Edit</Link>
